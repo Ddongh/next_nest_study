@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import NavBar from './component/NavBar/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,10 @@ export default function RootLayout({
         <title>Next.js 13 learn</title>
       </head>
       <body>
-        <header>Header</header>
+        <header>
+          <NavBar />
+
+        </header>
         <section>{children}</section>
         <footer>Footer</footer>
       </body>
